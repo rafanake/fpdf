@@ -1,9 +1,8 @@
-# fpdf
-FPDF Wrapper Class
+# FPDF Wrapper Class
 
-FPDF is a PHP class which allows to generate PDF files with pure PHP, that is to say without using the PDFlib library. F from FPDF stands for Free: you may use it for any kind of usage and modify it to suit your needs.
+### FPDF is a PHP class which allows to generate PDF files with pure PHP, that is to say without using the PDFlib library. F from FPDF stands for Free: you may use it for any kind of usage and modify it to suit your needs.
 
-FPDF has other advantages: high level functions. Here is a list of its main features:
+### FPDF has other advantages: high level functions. Here is a list of its main features:
 
 Choice of measure unit, page format and margins
 Page header and footer management

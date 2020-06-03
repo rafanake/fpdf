@@ -1,0 +1,12 @@
+{
+    "name": "rafan/fpdf",
+    "description": "php FPDF wrapper class",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Rafael Fiori",
+            "email": "rafanake@gmail.com"
+        }
+    ],
+    "require": {}
+}

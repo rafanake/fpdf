@@ -1,12 +1,19 @@
 {
-    "name": "rafan/fpdf",
-    "description": "php FPDF wrapper class",
-    "type": "library",
-    "authors": [
-        {
-            "name": "Rafael Fiori",
-            "email": "rafanake@gmail.com"
-        }
-    ],
-    "require": {}
+  "name": "rafanake/fpdf",
+  "description": "FPDF Wrapper",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Rafael Fiori",
+      "email": "rafanake@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Rafanake\\": "src/"
+    }
+  }
 }

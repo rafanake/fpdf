@@ -240,5 +240,4 @@ class BarCode128
             }
         }
     }
-
 }

@@ -172,12 +172,16 @@ class Semacode
     var $MAXBARCODE = 3116;
 
     var $Encodings;
-    var $SwitchCost;
+    var $switchCost;
     var $codings = "ACTXEB";
     var $debug = false;
+    var $cachedError = null;
 
     function __construct()
     {
+        $this->cachedError = error_reporting();
+        error_reporting(E_ERROR);
+
         $this->Encodings = array(
             $this->makeEncoding(10, 10, 10, 10, 3, 3, 5),
             $this->makeEncoding(12, 12, 12, 12, 5, 5, 7),
@@ -214,6 +218,11 @@ class Semacode
             array(1, 2, 2, 2, 0, 3), // E E_EDIFACT
             array(0, 1, 1, 1, 1, 0), // B E_BINARY
         );
+    }
+
+    function __destruct()
+    {
+        error_reporting($this->cachedError);
     }
 
     function EncodingListItem($s, $t)
